@@ -1,0 +1,1 @@
+const modelo = require("../model/modeloMongo.js");
