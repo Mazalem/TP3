@@ -1,0 +1,108 @@
+.navbar {
+    background-color: #061006a6;
+    padding: 10px 0;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.navbar .navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-nav .nav-link i {
+    margin-right: 5px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #163816;
+    color: #fff;
+}
+
+.display-6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.navbar-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    margin-right: -1px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #fff;
+    caret-color: #fff;
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: #ddd;
+    outline: none;
+    color: #fff;
+}
+
+.form-control:focus::placeholder {
+    color: #fff;
+}
+
+.form-control:focus-visible {
+    box-shadow: none;
+    border-color: #ddd;
+}
+
+.btn-submit {
+    border: 1px solid #ddd;
+    border-radius: 0 4px 4px 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    background-color: #163816;
+    border-color: #ffffff;
+}
+
+.btn-submit i {
+    color: #fff;
+    font-size: 16px;
+}

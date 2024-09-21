@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' href='/stylesheets/bootstrap/bootstrap.min.css' />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <div class="container">
+
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" /> 
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/images/icone.png" />
+  
+  <link rel='stylesheet' href='./partials/navbar/navbar.css' />
+  <link rel='stylesheet' href='./partials/footer/footer.css' />
+</head>
+
+<body>
+  {{> navbar/index}}
+
+  <div class="container">
     {{{body}}}
-    </div>
-    <script src="/javascripts/bootstrap/bootstrap.bundle.min.js"></script>
-  </body>
+  </div>
+
+  {{> footer/index}}
+  <script src="/javascripts/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
