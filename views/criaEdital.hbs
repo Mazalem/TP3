@@ -1,0 +1,51 @@
+<h2>Criação de Novo Edital</h2><br>
+<div class="container">
+  <form method="POST" action="/edital/cria">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <p><label for="titulo" class="form-label">Título</label></p>
+        <p><input type="text" class="form-control" name="titulo" value="" size="180" required /></p>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <p><label for="tipo" class="form-label">Tipo de Edital</label></p>
+        <select class="form-select" id="tipo" name="tipo" required>
+          <option value="" disable selected>Selecione o Tipo</option>
+          <option value="Ensino">Ensino</option>
+          <option value="Pesquisa">Pesquisa</option>
+          <option value="Extensão">Extensão</option>
+        </select>
+      </div>
+
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-lg-8">
+        <p><label for="link" class="form-label">Link Vinculado</label></p>
+        <p><input type="text" class="form-control" name="link" value="" size="180" required /></p>
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-lg-4">
+        <p><label for="coordenador" class="form-label">Coordenador</label></p>
+        <select class="form-select" id="coordenador" name="coordenador" required>
+          <option value="" disable selected>Selecione o Coordenador</option>
+          <option value="Elder">Elder</option>
+          <option value="Loham">Loham</option>
+          <option value="Filipe">Filipe</option>
+          <option value="Mylena">Mylena</option>
+          <option value="Karine">Karine</option>
+        </select>
+    </div>
+  </div>
+
+      <div class="row"></div>
+      <div class="col">
+        <p><label for="descricao" class="form-label">Descrição</label></p>
+        <p><textarea class="form-control" rows="5" cols="165" name="descricao" required></textarea></p>
+      </div>
+    </div>
+    <button onclick="window.location.href = '/'" class="btn btn-secondary">Cancelar</button> 
+    <button type="submit" class="btn btn-success">Criar</button>
+  </form>
+</div>

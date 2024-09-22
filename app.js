@@ -6,6 +6,7 @@ var logger = require('morgan');
 const hbs = require('hbs');
 
 var indexRouter = require('./routes/index');
+var RotasEdital = require('./routes/RotasEdital');
 
 var app = express();
 
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/partials', express.static(path.join(__dirname, 'views/partials'))); //adicionado para usar o css de cada partial
 
 app.use('/', indexRouter);
+app.use('/edital', RotasEdital);
 
 app.use(function(req, res, next) {
   next(createError(404));

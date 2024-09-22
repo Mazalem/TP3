@@ -1,1 +1,1 @@
-const modelo = require("../model/modeloMongo.js");
+const editais = require("../model/editalMongo.js");

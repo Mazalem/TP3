@@ -1,5 +1,6 @@
 body {
-  margin-top: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   text-align: justify;
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("/images/fundo.png");
@@ -12,3 +13,91 @@ body {
 body a {
   color: chartreuse;
 }
+
+
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  margin-right: -1px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+  caret-color: #fff;
+}
+
+.form-control::placeholder {
+  color: #fff;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  border-color: #ddd;
+  outline: none;
+  color: #fff;
+}
+
+.form-control:focus::placeholder {
+  color: #fff;
+}
+
+.form-control:focus-visible {
+  box-shadow: none;
+  border-color: #ddd;
+}
+
+.form-select {
+  border: 1px solid #ddd;
+  border-radius: 0 4px 4px 0;
+  background-color: transparent;
+  color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 5px;
+}
+
+.form-select option {
+  background-color: #000;
+  color: white;
+}
+
+.form-select::-ms-expand {
+  background: transparent;
+}
+
+.select-container {
+  position: relative;
+}
+
+.select-container::after {
+  content: '\25BC';
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.btn-submit {
+  border: 1px solid #ddd;
+  border-radius: 0 4px 4px 0;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #163816;
+  border-color: #ffffff;
+}
+
+.btn-submit i {
+  color: #fff;
+  font-size: 16px;
+}
+
