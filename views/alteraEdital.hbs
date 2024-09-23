@@ -1,0 +1,88 @@
+<h2>Criação de Novo Edital</h2><br>
+<div class="container">
+  <form method="POST" action="/edital/altera/{{editais.id}}">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <p><label for="titulo" class="form-label">Título</label></p>
+        <p><input type="text" class="form-control" name="titulo" value="{{editais.titulo}}" size="180" required /></p>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <p><label for="tipo" class="form-label">Tipo de Edital</label></p>
+        <select class="form-select" id="tipo" name="tipo" required>
+          {{#if b_ensino}}
+          <option value="Ensino" selected>Ensino</option>
+          {{else}}
+          <option value="Ensino">Ensino</option>
+          {{/if}}
+
+          {{#if b_pesquisa}}
+          <option value="Pesquisa" selected>Pesquisa</option>
+          {{else}}
+          <option value="Pesquisa">Pesquisa</option>
+          {{/if}}
+
+          {{#if b_extensao}}
+          <option value="Extensão" selected>Extensão</option>
+          {{else}}
+          <option value="Extensão">Extensão</option>
+          {{/if}}
+        </select>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <p><label for="link" class="form-label">Link Vinculado</label></p>
+        <p><input type="text" class="form-control" name="link" value="{{editais.link}}" size="180" required /></p>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <p><label for="coordenador" class="form-label">Coordenador</label></p>
+        <select class="form-select" id="coordenador" name="coordenador" required>
+          {{#if b_elder}}
+          <option value="Elder" selected>Elder</option>
+          {{else}}
+          <option value="Elder">Elder</option>
+          {{/if}}
+
+          {{#if b_loham}}
+          <option value="Loham" selected>Loham</option>
+          {{else}}
+          <option value="Loham">Loham</option>
+          {{/if}}
+
+          {{#if b_filipe}}
+          <option value="Filipe" selected>Filipe</option>
+          {{else}}
+          <option value="Filipe">Filipe</option>
+          {{/if}}
+
+          {{#if b_mylena}}
+          <option value="Mylena" selected>Mylena</option>
+          {{else}}
+          <option value="Mylena">Mylena</option>
+          {{/if}}
+
+          {{#if b_karine}}
+          <option value="Karine" selected>Karine</option>
+          {{else}}
+          <option value="Karine">Karine</option>
+          {{/if}}      
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p><label for="descricao" class="form-label">Descrição</label></p>
+        <p><textarea class="form-control" rows="5" cols="165" name="descricao" required>{{editais.descricao}}</textarea>
+        </p>
+      </div>
+    </div>
+    <button onclick="window.location.href = '/'" class="btn btn-secondary">Cancelar</button>
+    <button type="submit" class="btn btn-success">Alterar</button>
+  </form>
+</div>

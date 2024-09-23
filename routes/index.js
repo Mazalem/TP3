@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var controllerIndex = require("../controller/controllerIndex");
 
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Editais Compilados' });
-});
+router.get('/', controllerIndex.listar);
+
 router.get('/sobre', function(req, res) {
   res.render('sobre', {title: "Sobre"})
 });

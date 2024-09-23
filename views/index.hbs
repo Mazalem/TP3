@@ -1,2 +1,18 @@
-<h1>{{title}}</h1>
-<a href="/">Bem vindo ao {{title}}</a>
+{{#if todos}}
+{{#each todos}}
+<div class="container">
+  {{> cards/index id=this.id titulo=this.titulo coordenador=this.coordenador link=this.link tipo=this.tipo status=this.status descricao=this.descricao }}
+</div>
+{{/each}}
+{{else}}
+<div class="card">
+  <div class="card-header">
+    <h5 class="card-title">Nenhum Edital Disponível</h5>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Atualmente, não há editais disponíveis.</p>
+  </div>
+  <div class="card-footer">
+  </div>
+</div>
+{{/if}}

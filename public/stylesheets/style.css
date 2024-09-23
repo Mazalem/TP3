@@ -101,3 +101,64 @@ body a {
   font-size: 16px;
 }
 
+.card {
+  background-color: rgba(0, 0, 0, 0.479);
+  border: 1px solid white;
+  color: white;
+  margin: 0;
+}
+
+.card-header {
+  border-bottom: 1px solid white;
+}
+
+.nav-tabs .nav-link {
+  color: white;
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #205220;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #163816;
+  border-color: #ffffff;
+}
+
+.card-body {
+  color: white;
+}
+
+.tab-content {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.479);
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  color: #ffffff;
+}
+
+.modal-header {
+  border-bottom: 1px solid white;
+}
+
+.modal-footer {
+  border-top: 1px solid white;
+}
+
+
+
